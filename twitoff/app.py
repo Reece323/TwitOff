@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, render_template
 from .db_model import DB, User
 
 
@@ -13,7 +13,7 @@ def create_app():
 
     @app.route('/')
     def root():
-        return 'Welcome to Twitoff!'
+        return render_template('base.html', title='Home', users=...)
 
     @app.route('/<username>/<followers>')
     def add_user(username, followers):

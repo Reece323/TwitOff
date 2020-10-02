@@ -24,5 +24,5 @@ class Tweet(DB.Model):
 
 
 # To create the database:
-# from twitoff.db_model import DB, User #, Tweet
+# from twitoff.db_model import DB, User, Tweet
 # DB.create_all()
