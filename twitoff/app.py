@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request
 from .db_model import DB, User
-# from .twitter import add_user_tweepy
+from .twitter import add_user_tweepy
 
 
 def create_app():
