@@ -28,7 +28,7 @@ class Tweet(DB.Model):
 
 # import from terminal
 
-#flask shell: -> from twitoff.db_model import db, User, Tweet
+#flask shell: -> from twitoff.db_model import DB, User, Tweet
 ##################
 # add user: -> u1 = User(username='BobbySue', followers=10)
-# commit: -> db.session.add(u1) -> db.session.commit()
+# commit: -> DB.session.add(u1) -> DB.session.commit()
