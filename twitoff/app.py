@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from .db_model import DB, User
+from .db_model import DB, User, Tweet
 from .twitter import add_user_tweepy
 from .predict import predict_user
 
@@ -7,6 +7,7 @@ from .predict import predict_user
 def create_app():
     '''Create and configure an instance of our Flask application'''
     app = Flask(__name__)
+    #/Users/codyreece/Desktop/Repos/TwitOff/twitoff/twitoff.db
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///twitoff.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     DB.init_app(app)  # Connect Flask app to SQLAlchemy DB
@@ -42,8 +43,7 @@ def create_app():
         else:
             prediction = predict_user(user1, user2, tweet_text)
 
-            message = f'''{tweet_text} is more likely to be said by {user1 if prediction else user2} 
-                          than {user2 if prediction else user1}'''
+            message = f'''{tweet_text} is more likely to be said by {user1 if prediction else user2} than {user2 if prediction else user1}'''
 
         return render_template('predict.html', title='Prediction', message=message)
 
