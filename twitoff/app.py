@@ -7,7 +7,7 @@ from .predict import predict_user
 def create_app():
     '''Create and configure an instance of our Flask application'''
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:\\Users\\bruno\\Desktop\\DSPT7-Twitoff\\twitoff.sqlite3'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///twitoff.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     DB.init_app(app)  # Connect Flask app to SQLAlchemy DB
 

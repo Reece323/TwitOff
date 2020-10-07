@@ -26,6 +26,9 @@ class Tweet(DB.Model):
         return '<Tweet %r>' % self.tweet
 
 
-# To create the database:
-# from twitoff.db_model import DB, User, Tweet
-# DB.create_all()
+# import from terminal
+
+#flask shell: -> from twitoff.db_model import db, User, Tweet
+##################
+# add user: -> u1 = User(username='BobbySue', followers=10)
+# commit: -> db.session.add(u1) -> db.session.commit()
