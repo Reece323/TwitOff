@@ -115,7 +115,7 @@ def add_user_history(username):
 
             # Add tweet info to Tweet table
             db_tweet = Tweet(id=tweet.id,
-                             tweet=tweet.full_text[:350],
+                             tweet=tweet.full_text[:300],
                              embedding=embedding)
             db_user.tweet.append(db_tweet)
             DB.session.add(db_tweet)
