@@ -4,11 +4,58 @@
     <title>TwitOff - {{ title }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    /* Style the header */
+    .header {
+      background-color:DodgerBlue;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
   <body>
-    <body style="background-color:DodgerBlue;">
+    <!-- <body style="background-color:DodgerBlue;"> -->
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+
     <nav>
-      <a href="/" class="menu"><span>TwitOff!</span></a>
+      <div class="topnav">
+        <a href="/">TwitOff</a>
+      </div>
+
+      <!-- <a href="/" class="menu"><span>TwitOff!</span></a> -->
       <!-- responsive-->
       <!-- <input id="bmenub" type="text" class="show">
       <label for="bmenub" class="burger pseudo button">Menu</label> -->
