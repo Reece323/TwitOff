@@ -60,7 +60,7 @@
     <article class="flex two" style="padding: 3em 1em;">
       {% block content %}
       <div>
-        <h1>Select two users to compare:</h1>
+        <h3>Select two users to compare:</h3>
         <!-- <p>Select two users to compare:</p> -->
         <form action="/compare" method="post">
           <select name="user1">
@@ -78,7 +78,7 @@
         </form>
       </div>
       <div>
-        <h3>Twitter Users</h3>
+        <h3>Twitter Users:</h3>
         <form action="/user" method="post">
           <input type="text" name="user_name" placeholder="User to add">
           <input type="submit" value="Add User">
